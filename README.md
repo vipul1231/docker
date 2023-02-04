@@ -29,4 +29,6 @@ ImagePullPolicy: Never in deployment.yaml
    $ kubectl create service clusterip demo --tcp=<EXPOSE-PORT> -o=yaml >> deployment.yaml
 2) kubectl apply -f deployment.yaml
 3) Incase you want to delete kubectl delete -f deployment.yaml
-4) 
+
+
+Port fowrward: kubectl port-forward svc/spring-doc 8080:8080
